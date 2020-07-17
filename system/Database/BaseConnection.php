@@ -640,7 +640,7 @@ abstract class BaseConnection implements ConnectionInterface
 	{
 		if (empty($this->connID))
 		{
-			$this->initialize();
+			 $this->initialize();
 		}
 
 		$resultClass = str_replace('Connection', 'Result', get_class($this));

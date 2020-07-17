@@ -1,4 +1,4 @@
- <?php namespace App\Controllers;
+<?php namespace App\Controllers;
 use App\Models\M_user;
 class Login extends BaseController
 {

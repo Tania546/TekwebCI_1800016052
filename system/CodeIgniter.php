@@ -397,7 +397,7 @@ class CodeIgniter
 			// Is there a "post_controller_constructor" event?
 			Events::trigger('post_controller_constructor');
 
-			$returned = $this->runController($controller);
+			 $returned = $this->runController($controller);
 		}
 		else
 		{
@@ -907,7 +907,7 @@ class CodeIgniter
 
 		if (method_exists($class, '_remap'))
 		{
-			$output = $class->_remap($this->method, ...$params);
+			$output = $class->{$this->method}(...$params);
 		}
 		else
 		{
